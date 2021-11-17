@@ -1,0 +1,174 @@
+body{
+    background-color: #CACACA;;
+}
+
+.main_body{
+ font-family: "Poppins";
+ background-color: #cbced8;
+ box-sizing: border-box;
+}
+
+
+.clear_float::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* begin top bar */
+
+.main_body .top_bar{
+    background-color: #fff;
+    width: 1440px;
+    height: 82px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.main_body .top_bar .left_side img{
+    height: 27px;
+    width: 128px;
+    position: absolute;
+    left: 36px;
+    top: 27px;
+}
+
+.main_body .top_bar .right_side img{
+    cursor: pointer;
+}
+
+.main_body .top_bar .right_side #notification{
+    position: absolute;
+    left: 1284px;
+    top: 33px;
+}
+.main_body .top_bar .right_side #profilepic{
+    position: absolute;
+    left: 1319px;
+    top: 23px;
+    
+}
+
+.main_body .top_bar .right_side #dropdown{
+    position: absolute;
+    left: 1368px;
+    top: 33px;    
+}
+
+
+/* end top bar */
+
+/* side bar */
+
+.main_body .sidebar{
+    width: 271px;
+    background-color: #fff;
+    height: 1334px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    top:82px;
+}
+
+.main_body .sidebar a{
+    position: absolute;
+    color: #3A3E48;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    left: 27.31px;
+}
+
+.main_body .sidebar a.active{
+    color: #00B0E7;
+}
+
+.main_body .sidebar a:nth-child(1){
+    left: 27.31%;
+    right: 35.42%;
+    top: 3.75%;
+    bottom: 94.44%;
+}
+
+.main_body .sidebar a:nth-child(2){
+    left: 27.31%;
+    right: 21.4%;
+    top: 8.17%;
+    bottom: 90.03%;
+}
+
+.main_body .sidebar a:nth-child(3){
+    left: 27.31%;
+    right: 28.78%;
+    top: 12.61%;
+    bottom: 85.57%;
+}
+
+.main_body .sidebar a:nth-child(4){
+    left: 27.31%;
+    right: 28.78%;
+    top: 17.09%;
+    bottom: 81.09%;
+}
+
+.main_body .sidebar a:nth-child(5){
+    left: 27.31%;
+    right: 16.97%;
+    top: 21.44%;
+    bottom: 76.76%;
+}
+
+.main_body .sidebar a:nth-child(6){
+    left: 27.31%;
+    right: 26.94%;
+    top: 25.86%;
+    bottom: 72.34%;
+}
+
+.main_body .sidebar a:nth-child(7){
+    left: 27.31%;
+    right: 26.94%;
+    top: 30.28%;
+    bottom: 67.92%;
+}
+
+.main_body .sidebar a:nth-child(8){
+    left: 27.31%;
+    right: 26.94%;
+    top: 34.71%;
+    bottom: 63.49%;
+}
+
+.main_body .sidebar a:nth-child(9){
+    left: 27.31%;
+    right: 26.94%;
+    top: 39.13%;
+    bottom: 59.07%;
+}
+
+.main_body .sidebar a:nth-child(10){
+    left: 27.31%;
+    right: 26.94%;
+    top: 43.54%;
+    bottom: 54.67%;
+}
+
+
+
+/* end sidebar */
+
+/* begin main content */
+
+
+.main_body .main_content{
+}
+
+
+/* end main content */

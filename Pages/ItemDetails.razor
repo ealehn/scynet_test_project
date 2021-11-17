@@ -1,0 +1,88 @@
+@page "/itemdetails/{text}"
+@using Project.Entities
+@inject Project.Handler.IDataHandler _idatahander;
+
+<section class="section_itemdetails">
+
+    
+    <div class="top_area">
+        <span id="left_arrow"> &#8592; </span>
+        <span id="left_arrow_text"> Item Details </span>
+    </div>
+
+
+    @if(item_to_vew != null){
+
+    <div class="item_list_container">
+
+        <figure class="middle_side" id="itd_item_name">
+            <span class="label" > Item Name </span>
+            <span class="text"> @item_to_vew.name </span>
+        </figure>
+
+        <figure class="middle_side" id="itd_item_category">
+            <span class="label"> Item Category </span>
+            <span class="text"> @item_to_vew.item_category </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_item_quantity">
+            <span class="label"> Item Quantity </span>
+            <span class="text"> @item_to_vew.quantity </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_unit">
+            <span class="label"> Unit </span>
+            <span class="text"> @item_to_vew.item_unit </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_net_amount">
+            <span class="label"> Net Amount </span>
+            <span class="text">  @item_to_vew.net_amount </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_tax">
+            <span class="label"> Tax % </span>
+            <span class="text"> @item_to_vew.tax </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_unit">
+            <span class="label"> Unit </span>
+            <span class="text"> 1 </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_discount">
+            <span class="label"> Discount % </span>
+            <span class="text"> @item_to_vew.discount </span>
+        </figure>
+        
+        <figure class="middle_side" id="itd_gross_amount">
+            <span class="label"> Gross Amount </span>
+            <span class="text"> @item_to_vew.gross_amount </span>
+        </figure>
+        
+        <figure class="bottom_side" id="itd_description">
+
+            <span class="label"> Description </span>
+            <span id="description_text">
+
+                <strong> @item_to_vew.description </strong> 
+
+            </span>
+        </figure>
+
+    </div>
+
+    }
+
+</section>
+
+@code{
+    [Parameter]
+    public string Text {get;set;}
+    Item item_to_vew = null;
+
+    protected override void OnInitialized(){
+        Text = Text ?? "1";
+        item_to_vew = _idatahander.GetItem(new Guid(Text));
+    }
+}

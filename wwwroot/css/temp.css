@@ -1,0 +1,81 @@
+.main_body{
+    font-family: "Poppins";
+    background-color: #cbced8;
+    box-sizing: border-box;
+   }
+   
+   
+   .clear_float::after{
+       content: "";
+       display: table;
+       clear: both;
+   }
+   
+   /* begin top bar */
+   
+   .main_body .top_bar{
+       background-color: #fff;
+       width: 100%;
+       height: 82px;
+       box-sizing: border-box;
+   }
+   
+   .main_body .top_bar .left_side{
+       float: left;
+   }
+   
+   .main_body .top_bar .right_side{
+       float: right;
+   }
+   
+   .main_body .top_bar .left_side img{
+       height: 18px;
+       margin-right: 50px;
+   }
+   
+   .main_body .top_bar .right_side img{
+       height: 18px;
+       margin-right: 5px;
+       cursor: pointer;
+   }
+   
+   
+   /* end top bar */
+   
+   /* side bar */
+   
+   .main_body .sidebar{
+       width: 200px;
+       background-color: #fff;
+       height: 1334px;
+       padding: 50px 70px;
+       position: absolute;
+       left: 0%;
+       top:82px;
+   }
+   
+   .main_body .sidebar a{
+       color: #3A3E48;
+       padding: 10px 5px;
+       text-decoration: none;
+       display: block;
+   
+   }
+   
+   /* end sidebar */
+   
+   /* begin main content */
+   
+   
+   .main_body .main_content{
+       background-color: #c0c1c5;
+       width: calc(100% - 200px);
+       height: 700px;
+       position: absolute;
+       left: 200px;
+       padding: 0;
+   }
+   
+   
+   /* end main content */
+   

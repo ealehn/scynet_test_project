@@ -1,0 +1,96 @@
+@page "/allitems"
+@using Project.Entities
+@inject Project.Handler.IDataHandler _idatahander;
+
+<section class="section_index">
+
+    <div class="top_side clear_float">
+        <figure class="left_side">
+            <span> 2 Entries </span>
+            <select class="selection">
+                <option>
+                    All Items
+                </option>
+            </select>
+            <input type="text" placeholder="Search..."/>
+        </figure>
+        <figure class="right_side">
+            <a class="button"> Add </a>
+        </figure>
+    </div>
+
+    <div class="middle_side">
+        <table>
+            <tr>
+                <td> Title </td>
+                <td> Item Category </td>
+                <td> Gross Amount (GHS) </td>
+                <td> Quantity </td>
+                <td> Unit </td>
+                <td></td>
+            </tr>
+            <tbody>
+            @foreach (Item item in _idatahander.GetAllItems())
+            {
+                <tr>
+                    <td> @item.name </td>
+                    <td> @item.description </td>
+                    <td> @item.gross_amount </td>
+                    <td> @item.quantity </td>
+                    <td> @item.item_unit </td>
+                    <td> @item.description </td>
+                    <td class="three_dots"> ...
+                        <div class="slide_up">
+                            <a href="/itemdetails/@item.id"> View </a>
+                            <a href=""> Update </a>
+                            <a href=""> Delete </a>
+                        </div>
+                    </td>
+                </tr>
+                
+            }
+                @* <tr>
+                    <td> Malaria Test </td>
+                    <td> Laboratory Test </td>
+                    <td> 30.00 </td>
+                    <td> 100 </td>
+                    <td> 1</td>
+                    <td> something here </td>
+                    <td class="three_dots"> ...
+                        <div class="slide_up">
+                            <a href="/itemdetails/2"> View </a>
+                            <a href=""> Update </a>
+                            <a href=""> Delete </a>
+                        </div>
+                    </td>
+                </tr> *@
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bottom_side clear_float">
+        <figure class="left_side">
+            <a class="link"> &#60 &#60 </a>
+            <a class="link"> &#60 </a>
+            <a class="active"> 1 </a>
+            <a class="inactive"> 2 </a>
+            <a class="inactive"> 3 </a>
+            <a class="inactive"> 4 </a>
+            <a class="inactive"> 5 </a>
+            <a class="link"> &#62 </a>
+            <a class="link"> &#62 &#62 </a>
+        </figure>
+
+        <figure class="right_side">
+            <select>
+                <option> 10 </option>
+                <option> 20 </option>
+            </select>
+            <span> Displaying 10 of 100 records </span>
+        </figure>
+        
+    </div>
+
+
+</section>

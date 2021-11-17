@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+<section class="main_body">
+
+    <div class="top_bar">
+        <figure class="left_side">
+            <img src="images/company_logo.png" />
+        </figure>
+
+        <figure class="right_side">
+            <img id="notification" src="images/notification.png"/>
+            <img  id="profilepic" src="images/profilepic.png"/>
+            <img id="dropdown" src="images/dropdown.png"/>
+        </figure>
+    </div>
+
+    <div class="sidebar">
+        <SideBarLinks/>
+    </div>
+
+    <div class="main_content">
+
+            @Body
+    </div>
+
+</section>

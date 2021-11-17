@@ -1,0 +1,145 @@
+.section_additem{
+    position: absolute;
+    width: 1086px;
+    height: 688px;
+    top: 138px;
+    left: 302px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.03);
+}
+
+.section_additem #left_arrow{
+    position: absolute;
+    left: 38px;
+    top: 25px;
+    width: 17.52px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.section_additem #left_arrow_text{
+    position: absolute;
+    top: 20px;
+    left: 73px;
+    width: 111px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Poppins";
+}
+
+/* begin left side */
+
+.section_additem .left_side input{
+    left: 38px;
+    background: #FFFFFF;
+    width: 449px;
+    height: 38px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.section_additem #item_name{
+    top: 86px;
+}
+
+.section_additem #item_quantity{
+    top: 157px;
+}
+
+.section_additem #item_net_amount{
+    top: 234px;
+}
+
+.section_additem #item_gross_amount{
+    top: 309px;
+}
+.section_additem #item_description{
+    top: 384px;
+    left: 38px;
+    background: #FFFFFF;
+    width: 449px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: absolute;
+}
+
+
+/* end left side */
+
+/* begin right side */
+
+
+.section_additem .right_side select{
+    position: absolute;
+    width: 448px;
+    height: 39px;
+    left: 549px;
+    top: 86px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.section_additem .right_side select#item_category{
+    top: 86px;
+}
+
+.section_additem .right_side select#item_commission{
+    top: 157px;
+}
+
+.section_additem .right_side select#item_tax{
+    top: 234px;
+}
+
+.section_additem .right_side select#item_discount{
+    top: 308px;
+}
+
+/* end right side */
+
+/* begin buttom section */
+
+.section_additem .buttom_side #add_button,
+.section_additem .buttom_side #cancel_button{
+    position: absolute;
+    top: 616px;
+    position: absolute;
+    width: 83px;
+    height: 38px;
+    background: #E3EFF3;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section_additem .buttom_side #add_button{
+    left: 38px;
+    background: #E3EFF3;
+}
+
+.section_additem .buttom_side #cancel_button{
+    left: 138px;
+    background: #FFE7E2;
+    
+}
+
+.section_additem .validation-errors{
+    top: 464px;
+    left: 38px;
+    box-sizing: border-box;
+    position: absolute;
+    color: red;
+}
+
+/* end buttom section */
